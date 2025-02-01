@@ -1250,6 +1250,7 @@ li {
 
 .twoRowSection .upperRow p {
     margin: 0px;
+    color: var(--textPri);
 }
 
 .twoRowSection .upperRow .p3 {
@@ -1946,4 +1947,49 @@ p.pill.employer {
 
 .twoColSlider .twoCOlSliderSwiperCard .contentContainer .colorC {
     color: var(--textSecWhite);
+}
+
+
+p.p3.colorBlue {
+    color: var(--textPri) !important;
+}
+
+.jobGrazeWork .twoColsection .pill {
+    background: rgba(39, 92, 141, 0.1);
+    color: var(--textPri);
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.nursingType {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    margin: 100px auto;
+    width: 988px;
+}
+
+.nursingType .h3 {
+    text-align: center;
+}
+
+.nursingType .fillLbBtn {
+    width: max-content;
+    margin: 0 auto;
+}
+
+
+.nursingType .multiColAcoordian {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 80px 0px;
+}
+
+.multiColAcoordian .accordion-item:last-of-type {
+    padding: 0px;
+}
+
+.multiColAcoordian .accordion-body {
+    margin: 0px;
 }
