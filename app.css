@@ -1032,6 +1032,7 @@ li {
 
 .footer .footerMenu .leftSideMenu .menuWrapper .subMenu {
     background: white;
+    width: max-content;
     display: none;
 }
 
