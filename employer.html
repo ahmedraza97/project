@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+    <!-- custom css -->
+
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+
+<body>
+
+    <div class="bodyWrapper">
+        <div class="header">
+            <div class="languageCont">
+
+            </div>
+            <div class="headerWrapper">
+                <div class="logoContainer">
+                    <a href="index.html"><img src="assets/logo.png" alt=""></a>
+                </div>
+                <ul class="menuWrapper">
+                    <li class="p1 classDropHover">
+                        <a href="employer.html" class="anc">For Employers <i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="subMenu">
+                            <div class="handleHover">
+                                <li class="p1">
+                                    <a href="#">Healthcare Systems</a>
+                                    <a href="staffing.html">Staffing Agencies</a>
+                                </li>
+                            </div>
+
+                        </ul>
+                    </li>
+
+                    <li class="p1 classDropHover">
+                        <a href="nursing.html" class="anc">For Nurses</a>
+                    </li>
+                    <li class="p1 classDropHover">
+                        <a href="about.html" class="anc">About</a>
+                    </li>
+                    <li class="p1 classDropHover">
+                        <a href="#" class="anc">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="fillOrangeBtn p2">Sign In <i class="fa-solid fa-arrow-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mobileHeader">
+                <div class="mobileLogoContainer"><img src="assets/Logo Dark.png" alt=""></div>
+                <div class="hamIcon" onclick="showDrawer()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="mobileDrawer" id="mobileDrawer">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+
+                        <li style="padding-bottom: 0px;">
+                            <span style="padding-bottom: 10px;" onclick="showMobileDD()"> <a href="employer.html">For
+                                    Employers</a>
+                                <i class="fa-solid fa-angle-down"></i> </span>
+                            <ul class="mobileDD" id="mobileDD">
+                                <li><a href="#">Healthcare Systems</a></li>
+                                <li><a href="staffing.html">Staffing Agencies</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="nursing.html">For Nurses</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- employerBannerContainer -->
+
+        <div class="employerBannerContainer">
+            <div class="contentWrapper">
+                <p class="pill">FOR EMPLOYERS</p>
+                <p class="h3">Eliminate Your Nursing Shortage</p>
+                <p class="h6">Hire international nurses to provide fully-staffed patient care, save money, and improve
+                    operations.</p>
+                <a href="#" class="fillLbBtn p1">Find Nursing Jobs </a>
+            </div>
+            <img src="assets/For Employers Hero Image UI Cards.png" alt="">
+
+        </div>
+
+        <!-- jobGrazeWork -->
+        <div class="jobGrazeWork">
+            <div class="upperCOntentWrapper">
+                <div class="dynamicContentContainer">
+                    <div class="forEmployer" id="forEmployer">
+                        <div class="twoColsection">
+                            <div class="contentContainer">
+                                <p class="pill employer">HOW JOBGRAZE WORKS</p>
+                                <p class="h5">Our enterprise platform allows you to quickly post nursing jobs and sort
+                                    through our extensive database of vetted international candidates.</p>
+                                <p class="customFont">To get started, book a consultation call with our team to learn
+                                    how JobGraze can support your international nurse recruitment.</p>
+                                <a href="#" class="holoBtn p2">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <div class="imageContainer">
+                                <img src="assets/Illo Nurse Old Woman@2x.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="cardContainer">
+                            <div class="cardInner">
+                                <p class="itemCount ">01</p>
+                                <p class="h5">Post Your Job</p>
+                                <p class="p2">JobGraze integrates with your system to automatically pull the roles you
+                                    need filled onto the JobGraze platform.
+                                </p>
+                            </div>
+                            <div class="cardInner">
+                                <p class="itemCount ">02</p>
+                                <p class="h5">Review Candidates</p>
+                                <p class="p2">Our AI-powered SMART matching software will connect you with experienced
+                                    international candidates who meet your qualifications.</p>
+                            </div>
+                            <div class="cardInner">
+                                <p class="itemCount ">03</p>
+                                <p class="h5">Select Your Candidate </p>
+                                <p class="p2">JobGraze will handle all the required documents for RNs to be eligible to
+                                    leave their country and begin to work in the U.S. or Canada.</p>
+                            </div>
+                            <div class="cardInner">
+                                <p class="itemCount ">04</p>
+                                <p class="h5">Train Your Candidate </p>
+                                <p class="p2">While we process work permits and secure visas, we’ll develop an
+                                    orientation and training program with you so your nurses are prepared on their first
+                                    day of work.</p>
+                            </div>
+                            <div class="cardInner">
+                                <p class="itemCount ">05</p>
+                                <p class="h5">Your Nurse Starts Work</p>
+                                <p class="p2">Nurses can arrive as early as six months, depending upon their country of
+                                    hire. We’ll assist them with housing, transportation, and basic needs upon their
+                                    arrival in their host country.</p>
+                            </div>
+                            <img src="assets/Male Nurse At Desk.jpg" alt="">
+
+                        </div>
+
+                        <div class="btncontaier">
+                            <a href="#" class="fillOrangeBtn p2">Build Your Team <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- our partnership  -->
+
+            <div class="ourPartnerShip">
+
+                <div class="partnerCardContainer">
+                    <div class="partnerCard">
+                        <img src="assets/One-Year Employment Guarantee.png" alt="">
+                        <p class="p3">One-Year Employment Guarantee</p>
+                        <p class="p2">We will replace a nurse at no additional cost throughout our partnership. </p>
+                    </div>
+                    <div class="partnerCard">
+                        <img src="assets/99% Retention Rate.png" alt="">
+                        <p class="p3">99% Retention Rate</p>
+                        <p class="p2">Nearly all of our international nursing candidates stay with their matched
+                            employer.</p>
+                    </div>
+                    <div class="partnerCard">
+                        <img src="assets/A Network of Experienced Nurses.png" alt="">
+                        <p class="p3">A Network of Experienced Nurses</p>
+                        <p class="p2">Our database includes over 70,000 nurses with BSN degrees and specialized skills.
+                        </p>
+                    </div>
+                    <div class="partnerCard">
+                        <img src="assets/millions in annual savings.png" alt="">
+                        <p class="p3">Millions in annual savings </p>
+                        <p class="p2">Relying on temporary nurses can cost $10.5 million a year, while high rates of
+                            nurse turnover can cost $500,000 annually. JobGraze reduces reliances on temporary nurses
+                            and can keep you fully-staffed. </p>
+                    </div>
+                    <div class="partnerCard">
+                        <img src="assets/We Handle the Logistics.png" alt="">
+                        <p class="p3">We Handle the Logistics</p>
+                        <p class="p2">We’ll take care of your new hires’ immigration, work permits, and relocation, so
+                            the process is as easy and efficient for you as hiring domestically. </p>
+                    </div>
+                    <div class="gradientCard" bis_skin_checked="1">
+                        <a href="#" class="borderBtn p1">Contact us <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="twoColcontainer hireInternational">
+                    <div class="imageContainer">
+                        <img src="assets/Why Hire International Nurses Image Cards.png" alt="">
+
+                    </div>
+                    <div class="contentContainer">
+                        <p class="h3">Why Hire <span>International Nurses?</span></p>
+                        <p class="p3">There are approximately 1.2 million nurse job vacancies nationwide, and the exodus
+                            of nurses continues. Understaffed hospitals and practices face higher costs and struggle to
+                            meet patient needs.</p>
+                        <p class="p3">We work with international nurses who are highly qualified and are eager to move
+                            to the U.S. or Canada for better career opportunities. Hiring international nurses quickly
+                            fills gaps in your workforce, dramatically cuts costs, and improves patient care.</p>
+                        <a href="#" class="fillLbBtn p1">Learn About Our Mission </a>
+                    </div>
+
+                </div>
+
+                <div class="ourCandidatesHave">
+                    <p class="pill employer">OUR CANDIDATES HAVE</p>
+                    <div class="twoColsection">
+                        <div class="qualities">
+                            <p class="p1">
+                                Passed NCLEX RN, English and/or French exams
+                            </p>
+                        </div>
+                        <div class="qualities">
+                            <p class="p1">
+                                At least one of the following: a BSN, a MSN, or a nursing diploma
+                            </p>
+                        </div>
+                        <div class="qualities">
+                            <p class="p1">
+                                Experience across all specialties
+                            </p>
+                        </div>
+                        <div class="qualities">
+                            <p class="p1">
+                                2+ years of experience
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Meet the candidates -->
+
+        <div class="whyCareen extraSpacingCandidates">
+
+            <p class="h2">Meet The Candidates</p>
+
+
+            <div class="swiper candidatesSwiper">
+                <div class="leftSlideBtn">
+
+                </div>
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="twoRowSection">
+                            <div class="upperRow">
+                                <img src="assets/Vanessa.png" alt="">
+                                <p class="h6">Vanessa</p>
+                                <p class="p3">Clinical nurse cns</p>
+                            </div>
+                            <ul class="lowerRow">
+                                <li>
+                                    <p class="p4"><span>EXPERIENCE LEVEL</span>2+ YEARS </p>
+                                </li>
+                                <li>
+                                    <p class="p3">Read More -></p>
+                                </li>
+                                <li><a href="#" class="fillOrangeBtn p3">Book now</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="twoRowSection">
+                            <div class="upperRow">
+                                <img src="assets/Mason.png" alt="">
+                                <p class="h6">Mason</p>
+                                <p class="p3">unit charge nurse, ER</p>
+                            </div>
+                            <ul class="lowerRow">
+                                <li>
+                                    <p class="p4"><span>EXPERIENCE LEVEL</span>4+ YEARS </p>
+                                </li>
+                                <li>
+                                    <p class="p3">Read More -></p>
+                                </li>
+                                <li><a href="#" class="fillOrangeBtn p3">Book now</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="twoRowSection">
+                            <div class="upperRow">
+                                <img src="assets/Irea.png" alt="">
+                                <p class="h6">Irea</p>
+                                <p class="p3">NURSE Manager, PRN</p>
+                            </div>
+                            <ul class="lowerRow">
+                                <li>
+                                    <p class="p4"><span>EXPERIENCE LEVEL</span>4+ YEARS </p>
+                                </li>
+                                <li>
+                                    <p class="p3">Read More -></p>
+                                </li>
+                                <li><a href="#" class="fillOrangeBtn p3">Book now</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="twoRowSection">
+                            <div class="upperRow">
+                                <img src="assets/Vanessa.png" alt="">
+                                <p class="h6">Vanessa</p>
+                                <p class="p3">Clinical nurse cns</p>
+                            </div>
+                            <ul class="lowerRow">
+                                <li>
+                                    <p class="p4"><span>EXPERIENCE LEVEL</span>2+ YEARS </p>
+                                </li>
+                                <li>
+                                    <p class="p3">Read More -></p>
+                                </li>
+                                <li><a href="#" class="fillOrangeBtn p3">Book now</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <a href="#" class="fillLbBtn p1">View All Candidates</a>
+        </div>
+
+
+
+        <div class="clientList" bis_skin_checked="1">
+
+            <p class="ourClient">Our Clients</p>
+            <p class="h3">Trusted By Top Institutions</p>
+            <div class="swiper clientSwiper swiper-initialized swiper-horizontal swiper-backface-hidden"
+                bis_skin_checked="1">
+                <div class="swiper-wrapper" id="swiper-wrapper-bb9ad07fcfa3458b" aria-live="off" bis_skin_checked="1"
+                    style="transition-duration: 0ms; transform: translate3d(-373.2px, 0px, 0px); transition-delay: 0ms;">
+
+
+
+                    <div class="swiper-slide swiper-slide-prev" role="group" aria-label="3 / 6"
+                        data-swiper-slide-index="2" bis_skin_checked="1" style="width: 343.2px; margin-right: 30px;">
+                        <div class="dflex" bis_skin_checked="1"><img src="assets/logo3.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-active" role="group" aria-label="4 / 6"
+                        data-swiper-slide-index="3" bis_skin_checked="1" style="width: 343.2px; margin-right: 30px;">
+                        <div class="dflex" bis_skin_checked="1"><img src="assets/logo4.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-next" role="group" aria-label="5 / 6"
+                        data-swiper-slide-index="4" bis_skin_checked="1" style="width: 343.2px; margin-right: 30px;">
+                        <div class="dflex" bis_skin_checked="1"><img src="assets/logo5.png" alt=""></div>
+                    </div>
+
+                    <div class="swiper-slide " role="group" aria-label="6 / 6" data-swiper-slide-index="5"
+                        bis_skin_checked="1" style="width: 343.2px; margin-right: 30px;">
+                        <div class="dflex" bis_skin_checked="1"><img src="assets/logo5.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide" role="group" aria-label="1 / 6" data-swiper-slide-index="0"
+                        bis_skin_checked="1" style="width: 343.2px; margin-right: 30px;">
+                        <div class="dflex" bis_skin_checked="1"><img src="assets/logo1.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide" role="group" aria-label="2 / 6" data-swiper-slide-index="1"
+                        bis_skin_checked="1" style="width: 343.2px; margin-right: 30px;">
+                        <div class="dflex" bis_skin_checked="1"><img src="assets/logo2.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="swiper-pagination" bis_skin_checked="1"></div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+            </div>
+
+
+        </div>
+        <!-- faqs -->
+        <div class="whyCareen extraSpacingCandidates">
+
+            <p class="pill">FAQS</p>
+            <p class="h3">Frequently asked questions</p>
+
+            <div class="faqContainer">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button p1" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span class="iconCont">
+                                    What are the qualifications of the international nurses available to hire through
+                                    JobGraze?
+
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body p2">
+                                Our nurses are fully licensed and meet U.S. and Canada healthcare standards. Our
+                                rigorous vetting process ensures all candidates have the required skills and
+                                certifications.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed p1" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How is hiring international nurses through JobGraze more cost-effective than traditional
+                                recruitment?
+
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body p2">
+                                Hiring through our platform can reduce costs related to high turnover and recruitment
+                                time. We guarantee a one-year placement for every nurse, reducing reliance on short-term
+                                hiring.
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed p1" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                What is the timeline for placing an international nurse at our facility?
+
+
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body p2">
+                                The process can take between 6 months and 1.5 years, depending on visa processing and
+                                the nurse’s home country. JobGraze oversees all of these steps and provides ongoing
+                                updates so the process is simple and seamless for you.
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed p1" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                How much does the JobGraze enterprise platform cost?
+
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body p2">
+                                For pricing, please book a consultation with our CEO here.
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed p1" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Do international nurses need additional training once they arrive?
+
+
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body p2">
+                                All nurses have BSNs and significant experience, but they may need orientation or
+                                facility-specific training. We help with onboarding and cultural adjustment to ensure
+                                smooth integration.
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed p1" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                How do you support international nurses after they start working?
+
+
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body p2">
+                                We provide ongoing support for nurses, including relocation assistance and ongoing
+                                resources to ensure they can succeed in their new roles.
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <p class="pill extraSpacingPill"><span class="p3">Didn’t find what you’re looking for? <a href="#">Contact
+                        us</a></span></p>
+
+            <div class="faqContentContainer">
+                <p class="h3">Our Pricing</p>
+                <p>Our pricing is a placement fee and includes relocation assistance. Work permits/immigration and
+                    airfare are additional fees.</p>
+                <p>If your company would like to handle work permits/immigration, we are happy to reduce the price.</p>
+            </div>
+        </div>
+
+        <!-- footerHeroImage -->
+        <div class="footerHeroImage employer">
+            <div class="wrapIt">
+                <p class="h3">Build your nursing team today with the JobGraze platform.</p>
+                <p class="h6">Let’s discuss how we can eliminate your nursing shortage for higher retention,
+                    productivity, and
+                    quality of care.</p>
+                <a href="#" class="fillLbBtn p1">Contact Us <i class="fa-solid fa-arrow-right"></i> </a>
+
+            </div>
+            <div class="imageFooter">
+                <img src="assets/mobileTab.png" alt="">
+            </div>
+        </div>
+
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="upperFooter">
+                <div class="footerContentWrapper">
+                    <div>
+                        <p class="h3">Stay Connected</p>
+                        <p class="p1">Receive updates from our team.</p>
+                    </div>
+                    <div class="signupWrapper">
+                        <input type="text" name="" id="" class="input p1" placeholder="Enter Email">
+                        <a href="#" class="fillOrangeBtn p1">Sign In <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="appBtnContainer">
+                        <a href="#"><img src="assets/Google Play Store badge.png" alt=""></a>
+                        <a href="#"><img src="assets/App Store badge.png" alt=""></a>
+                    </div>
+
+                </div>
+                <div class="footerImageCOntainer">
+                    <img src="assets/footerImage.png" alt="">
+                </div>
+            </div>
+            <div class="footerMenu">
+                <div class="leftSideMenu">
+                    <ul class="menuWrapper">
+                        <li class="p1 classDropHover">
+                            <a href="#" class="anc">For Employers <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="subMenu">
+                                <li class="p1">
+                                    <a href="#">Healthcare Systems</a>
+                                </li>
+                                <li class="p1">
+                                    <a href="#">Staffing Agencies</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="p1 ">
+                            <a href="#" class="anc">For Nurses</a>
+                        </li>
+                        <li class="p1 ">
+                            <a href="#" class="anc">About</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="logoContainer">
+                    <img src="assets/Logo Dark.png" alt="">
+                </div>
+
+                <div class="rightSideMenu">
+                    <ul class="menuWrapper">
+                        <li class="p1 classDropHover">
+                            <a href="#" class="anc">Blog</a>
+                        </li>
+
+                        <li class="p1 ">
+                            <a href="#" class="anc">Careers</a>
+                        </li>
+                        <li class="p1 ">
+                            <a href="#" class="anc">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footerExtras">
+                <div class="pageLink">
+                    <a href="#" class="p3">Privacy Policy</a>
+                    <a href="#" class="p3">CA Notice of Consent</a>
+                    <a href="#" class="p3">Terms of Use</a>
+                </div>
+
+                <div class="socialLinks">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                </div>
+
+            </div>
+
+            <p class="cc">copyright 2024</p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"> </script>
+
+
+
+</body>
+
+
+</html>

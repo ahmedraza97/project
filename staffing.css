@@ -1,0 +1,53 @@
+:root {
+    --backgroundOne: #e2f3f8;
+    --backgroundTwo: #004652;
+    --backgroundThree: #FFFFFF;
+    --btnPri: #00ADCC;
+    --btnSec: #F99A3A;
+    --icon: #004652;
+    --gradientLight: linear-gradient(180deg, rgba(239, 252, 255, 1) 0%, rgba(207, 235, 241, 1) 100%);
+    --gradientDark: linear-gradient(66deg, rgba(0, 70, 81, 1) 0%, rgba(0, 109, 126, 1) 87%);
+    --gradientRadial: radial-gradient(circle, rgba(0, 109, 126, 1) 0%, rgba(0, 70, 81, 1) 100%);
+    --textPri: #004652;
+    --textPriWhite: rgba(0, 70, 82, 0.7);
+    --textSec: #151439;
+    --textSecWhite: rgba(21, 20, 57, 0.7);
+    --textThird: rgba(255, 255, 255, 0.7);
+    --colorBorder: rgba(0, 0, 0, 0.171);
+}
+
+
+.staffingBannerContainer {
+    width: 1350px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+.staffingBannerContainer .contentContainer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.staffingBannerContainer .contentContainer .h6 {
+    opacity: .7;
+}
+
+.staffingBannerContainer .contentContainer .fillLbBtn {
+    width: max-content;
+    border: 1px solid var(--btnPri);
+}
+
+.staffingBannerContainer .imageContainer {
+    width: 100%;
+}
+
+.staffingBannerContainer .imageContainer img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}

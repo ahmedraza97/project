@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+    <!-- custom css -->
+
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+
+<body>
+
+    <div class="bodyWrapper">
+        <div class="header">
+            <div class="languageCont">
+
+            </div>
+            <div class="headerWrapper">
+                <div class="logoContainer">
+                    <a href="index.html"><img src="assets/logo.png" alt=""></a>
+                </div>
+                <ul class="menuWrapper">
+                    <li class="p1 classDropHover">
+                        <a href="employer.html" class="anc">For Employers <i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="subMenu">
+                            <div class="handleHover">
+                                <li class="p1">
+                                    <a href="#">Healthcare Systems</a>
+                                    <a href="staffing.html">Staffing Agencies</a>
+                                </li>
+                            </div>
+
+                        </ul>
+                    </li>
+
+                    <li class="p1 classDropHover">
+                        <a href="nursing.html" class="anc">For Nurses</a>
+                    </li>
+                    <li class="p1 classDropHover">
+                        <a href="about.html" class="anc">About</a>
+                    </li>
+                    <li class="p1 classDropHover">
+                        <a href="#" class="anc">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="fillOrangeBtn p2">Sign In <i class="fa-solid fa-arrow-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mobileHeader">
+                <div class="mobileLogoContainer"><img src="assets/Logo Dark.png" alt=""></div>
+                <div class="hamIcon" onclick="showDrawer()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="mobileDrawer" id="mobileDrawer">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+
+                        <li style="padding-bottom: 0px;">
+                            <span style="padding-bottom: 10px;" onclick="showMobileDD()"> <a href="employer.html">For
+                                    Employers</a>
+                                <i class="fa-solid fa-angle-down"></i> </span>
+                            <ul class="mobileDD" id="mobileDD">
+                                <li><a href="#">Healthcare Systems</a></li>
+                                <li><a href="staffing.html">Staffing Agencies</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="nursing.html">For Nurses</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- aboutBanner -->
+
+        <div class="aboutBanner">
+            <p class="h3">Our Story</p>
+            <div class="twoColSection">
+                <div class="leftContainer">
+                    <p class="p2">Every day in the U.S., 10,000 people turn 65 years old, and the number of seniors in
+                        Canada is
+                        growing six times faster than children. But more nurses and physicians are suffering from
+                        burnout. The gap in healthcare is dramatically increasing.</p>
+                    <p class="p2">In 2021, one of our co-founders, Alexis, was a healthcare provider and experienced a
+                        turnover of
+                        100 caregivers within 90 days. With the high costs of contract help and inefficient solutions,
+                        this took a toll on nurses and patients.</p>
+                </div>
+                <div class="rightContainer">
+                    <p class="h6">To fix this, Alexis partnered with co-founder Jen to build a healthcare staffing
+                        solution for experienced nurses looking for new opportunities in the US and Canada. JobGraze is
+                        the only AI-powered platform to connect international nurses with employers in need of full-time
+                        staff. </p>
+                    <p class="p1">We’re combating the nationwide nursing shortage by simplifying the process of hiring
+                        international nurses, and ensuring the highest quality of care for patients.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- meet Our leaders -->
+        <div class="whyCareen extraSpacingCandidates meetOurLeaders">
+            <div class="contentWrapper">
+                <p class="h2">Meet our Leadership team</p>
+                <p class="h5">Our executive team has more than 140 combined years of experience in healthcare.</p>
+            </div>
+
+            <div class="teamCardContainer">
+                <div class="teamCard">
+                    <img src="assets/Alexis Nguyen, MBA.png" class="teamImage" alt="">
+                    <p class="h6">Alexis Nguyen, MBA</p>
+                    <p class="p4">Co-Founder & Chief Executive</p>
+                    <img src="assets/in.png" class="icon" alt="">
+                </div>
+                <div class="teamCard">
+                    <img src="assets/Jenn Vuong.png" class="teamImage" alt="">
+                    <p class="h6">Jenn Vuong</p>
+                    <p class="p4">Co-Founder & COO</p>
+                    <img src="assets/in.png" class="icon" alt="">
+                </div>
+                <div class="teamCard">
+                    <img src="assets/Chris Morancie.png" class="teamImage" alt="">
+                    <p class="h6">Chris Morancie</p>
+                    <p class="p4">CTO & Head of Product</p>
+                    <img src="assets/in.png" class="icon" alt="">
+                </div>
+                <div class="teamCard">
+                    <img src="assets/Urmila Sharma, APRN.png" class="teamImage" alt="">
+                    <p class="h6">Urmila Sharma, APRN</p>
+                    <p class="p4">Chief Healthcare Officer, Int’l Nurses</p>
+                    <img src="assets/in.png" class="icon" alt="">
+                </div>
+                <div class="teamCard">
+                    <img src="assets/Dr. Giselle Irio, DO.png" class="teamImage" alt="">
+                    <p class="h6">Dr. Giselle Irio, DO</p>
+                    <p class="p4">Chief Healthcare Officer,Int’l Physicians</p>
+                    <img src="assets/in.png" class="icon" alt="">
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- meet Oits -->
+        <div class="whyCareen meetOits">
+            <div class="inner">
+                <div class="imageContainer">
+                    <img src="assets/Otis.png" alt="">
+                </div>
+                <div class="contentWrapper">
+                    <p class="h2">Meet otis</p>
+                    <p class="h6">Meet Otis, our trusty mascot and “greatest of all time.” He helps us graze for jobs
+                        and
+                        international nurses, streamlining the process of connecting healthcare professionals with
+                        employers.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- our Vision -->
+        <div class="whyCareen ourVision">
+            <div class="inner">
+                <p class="pill">OUR VISION</p>
+                <p class="h5">Mobilizing healthcare workers where and when they are needed internationally.</p>
+                <img src="assets/mobilize.png" class="imageSpacer" alt="">
+                <p class="pill"> OUR MISSION</p>
+                <p class="h5" style="margin-bottom: 0px;">Connecting licensed healthcare professionals and employers in
+                    finding a perfect fit.</p>
+            </div>
+        </div>
+
+
+
+
+        <!-- blog Slider -->
+
+        <div class="blogWrapper">
+
+            <p class="h2">In the News</p>
+
+            <div class="swiper blogSlider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="blogCard">
+                            <div class="imageContainer">
+                                <img src="assets/placeholder.png" alt="">
+                            </div>
+                            <div class="contentWrapper">
+                                <p class="date p3">OCT 17</p>
+                                <p class="h6">JobGraze News Headline</p>
+                                <p class="p2">Lorem ipsum dolor sit amet. Eum dolorem iste eum repellat fugiat sit
+                                    accusamus.</p>
+                                <a href="#" class="readmore">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blogCard">
+                            <div class="imageContainer">
+                                <img src="assets/placeholder.png" alt="">
+                            </div>
+                            <div class="contentWrapper">
+                                <p class="date p3">OCT 17</p>
+                                <p class="h6">JobGraze News Headline</p>
+                                <p class="p2">Lorem ipsum dolor sit amet. Eum dolorem iste eum repellat fugiat sit
+                                    accusamus.</p>
+                                <a href="#" class="readmore">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blogCard">
+                            <div class="imageContainer">
+                                <img src="assets/placeholder.png" alt="">
+                            </div>
+                            <div class="contentWrapper">
+                                <p class="date p3">OCT 17</p>
+                                <p class="h6">JobGraze News Headline</p>
+                                <p class="p2">Lorem ipsum dolor sit amet. Eum dolorem iste eum repellat fugiat sit
+                                    accusamus.</p>
+                                <a href="#" class="readmore">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blogCard">
+                            <div class="imageContainer">
+                                <img src="assets/placeholder.png" alt="">
+                            </div>
+                            <div class="contentWrapper">
+                                <p class="date p3">OCT 17</p>
+                                <p class="h6">JobGraze News Headline</p>
+                                <p class="p2">Lorem ipsum dolor sit amet. Eum dolorem iste eum repellat fugiat sit
+                                    accusamus.</p>
+                                <a href="#" class="readmore">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <a href="#" class="fillLbBtn p1">See All News <i class="fa-solid fa-arrow-right"></i> </a>
+        </div>
+
+
+
+        <!-- footerHeroImage -->
+
+        <div class="footerHeroImage">
+            <div class="wrapIt aboutWrapIt">
+                <p class="h1">Meet Your Match</p>
+                <p class="h5">Connect with a nursing job or hire an international nurse today.</p>
+                <div class="btnWrapper" bis_skin_checked="1">
+                    <a href="#" class="fillLbBtn p1">Find A Job </a>
+                    <a href="#" class="fillOrangeBtn p1">Hire A Nurse </a>
+                </div>
+            </div>
+            <div class="imageFooter aboutFooterImage">
+                <img src="assets/iPhones.png" alt="">
+            </div>
+        </div>
+
+
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="upperFooter">
+                <div class="footerContentWrapper">
+                    <div>
+                        <p class="h3">Stay Connected</p>
+                        <p class="p1">Receive updates from our team.</p>
+                    </div>
+                    <div class="signupWrapper">
+                        <input type="text" name="" id="" class="input p1" placeholder="Enter Email">
+                        <a href="#" class="fillOrangeBtn p1">Sign In <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="appBtnContainer">
+                        <a href="#"><img src="assets/Google Play Store badge.png" alt=""></a>
+                        <a href="#"><img src="assets/App Store badge.png" alt=""></a>
+                    </div>
+
+                </div>
+                <div class="footerImageCOntainer">
+                    <img src="assets/footerImage.png" alt="">
+                </div>
+            </div>
+            <div class="footerMenu">
+                <div class="leftSideMenu">
+                    <ul class="menuWrapper">
+                        <li class="p1 classDropHover">
+                            <a href="#" class="anc">For Employers <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="subMenu">
+                                <li class="p1">
+                                    <a href="#">Healthcare Systems</a>
+                                </li>
+                                <li class="p1">
+                                    <a href="#">Staffing Agencies</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="p1 ">
+                            <a href="#" class="anc">For Nurses</a>
+                        </li>
+                        <li class="p1 ">
+                            <a href="#" class="anc">About</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="logoContainer">
+                    <img src="assets/Logo Dark.png" alt="">
+                </div>
+
+                <div class="rightSideMenu">
+                    <ul class="menuWrapper">
+                        <li class="p1 classDropHover">
+                            <a href="#" class="anc">Blog</a>
+                        </li>
+
+                        <li class="p1 ">
+                            <a href="#" class="anc">Careers</a>
+                        </li>
+                        <li class="p1 ">
+                            <a href="#" class="anc">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footerExtras">
+                <div class="pageLink">
+                    <a href="#" class="p3">Privacy Policy</a>
+                    <a href="#" class="p3">CA Notice of Consent</a>
+                    <a href="#" class="p3">Terms of Use</a>
+                </div>
+
+                <div class="socialLinks">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                </div>
+
+            </div>
+
+            <p class="cc">copyright 2024</p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"> </script>
+
+
+
+</body>
+
+
+</html>
