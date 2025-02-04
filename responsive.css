@@ -632,7 +632,20 @@
     .multiColAcoordian {
         grid-template-columns: 1fr !important;
     }
-    .nursingType .multiColAcoordian{
+
+    .nursingType .multiColAcoordian {
         margin: 40px 0px;
     }
+
+    .footerHeroImage {
+        padding-bottom: 50px;
+
+    }
+    .gradient{
+        display: block;
+    }
+
+    /* .footerHeroImage .imageFooter {
+        background-image: url('./assets/back.png');
+    } */
 }

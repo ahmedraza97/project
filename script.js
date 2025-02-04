@@ -33,16 +33,22 @@ let showDrawer = () => {
 let forEmployer = document.getElementById('forEmployer')
 let forNurse = document.getElementById('forNurse')
 
+var emp = document.getElementById('emp')
+var nurse = document.getElementById('nurse')
+
 let showEmployer = () => {
     forEmployer.style.display = 'block'
     forNurse.style.display = 'none'
+    emp.classList.add('active')
+    nurse.classList.remove('active')
 }
 
 let showNurse = () => {
     forNurse.style.display = 'block'
     forEmployer.style.display = 'none'
+    nurse.classList.add('active')
+    emp.classList.remove('active')
 }
-
 
 
 // Clients Swiper
@@ -54,19 +60,19 @@ if (windowWidth > 1300) {
 } else if (windowWidth > 900 && windowWidth < 1300) {
     clientItemToShow = 3
 } else if (windowWidth > 300 && windowWidth < 900) {
-    clientItemToShow = 1
+    clientItemToShow = 1.3
 } else {
     clientItemToShow
 }
 
 var swiper = new Swiper(".clientSwiper", {
     slidesPerView: clientItemToShow,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
+    spaceBetween: windowWidth > 600 ? 30 : 10,
+    // loop: true,
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    // },
 });
 
 
@@ -76,14 +82,14 @@ if (windowWidth > 1300) {
 } else if (windowWidth > 900 && windowWidth < 1300) {
     slidesToShow = 2
 } else if (windowWidth > 300 && windowWidth < 900) {
-    slidesToShow = 1
+    slidesToShow = 1.3
 } else {
     slidesToShow
 }
 // jobHiringSwiper
 var swiper = new Swiper(".jobHiringSwiper", {
     slidesPerView: slidesToShow,
-    spaceBetween: 30,
+    spaceBetween: windowWidth > 600 ? 30 : 10,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -103,22 +109,23 @@ if (windowWidth > 1300) {
 } else if (windowWidth > 900 && windowWidth < 1300) {
     candidateSlidesToShow = 2
 } else if (windowWidth > 300 && windowWidth < 900) {
-    candidateSlidesToShow = 1
+    candidateSlidesToShow = 1.3
 } else {
     candidateSlidesToShow
 }
 var swiper = new Swiper(".candidatesSwiper", {
     slidesPerView: candidateSlidesToShow,
-    spaceBetween: 30,
+    spaceBetween: windowWidth > 600 ? 30 : 10,
     freeMode: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
-    }, loop: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
     },
+    //  loop: true,
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    // },
 });
 
 
@@ -132,18 +139,18 @@ if (windowWidth > 1300) {
 } else if (windowWidth > 900 && windowWidth < 1300) {
     blogSlidesToShow = 2
 } else if (windowWidth > 300 && windowWidth < 900) {
-    blogSlidesToShow = 1
+    blogSlidesToShow = 1.3
 } else {
     blogSlidesToShow
 }
 var swiper = new Swiper(".blogSlider", {
     slidesPerView: blogSlidesToShow,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
+    spaceBetween: windowWidth > 600 ? 30 : 10,
+    // loop: true,
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    // },
 });
 
 
@@ -156,18 +163,18 @@ if (windowWidth > 1300) {
 } else if (windowWidth > 900 && windowWidth < 1300) {
     nursingResourcesSlidesToShow = 2
 } else if (windowWidth > 300 && windowWidth < 900) {
-    nursingResourcesSlidesToShow = 1
+    nursingResourcesSlidesToShow = 1.3
 } else {
     nursingResourcesSlidesToShow
 }
 var swiper = new Swiper(".nursingResourcesSwiper", {
     slidesPerView: nursingResourcesSlidesToShow,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
+    spaceBetween: windowWidth > 600 ? 30 : 10,
+    // loop: true,
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    // },
 });
 
 
@@ -177,18 +184,18 @@ if (windowWidth > 1300) {
 } else if (windowWidth > 900 && windowWidth < 1300) {
     twoCOlSliderSwiperCount = 2
 } else if (windowWidth > 300 && windowWidth < 900) {
-    twoCOlSliderSwiperCount = 1
+    twoCOlSliderSwiperCount = 1.3
 } else {
     twoCOlSliderSwiperCount
 }
 var swiper = new Swiper(".twoCOlSliderSwiper", {
     slidesPerView: twoCOlSliderSwiperCount,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
+    spaceBetween: windowWidth > 600 ? 30 : 10,
+    // loop: true,
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    // },
 });
 
 
