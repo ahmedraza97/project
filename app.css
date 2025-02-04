@@ -564,9 +564,11 @@ li {
 } */
 
 .active {
-    position: relative;
+    position: absolute;
+    bottom: 2px;
     display: block;
     width: 100%;
+
 }
 
 .active::after {
@@ -577,7 +579,6 @@ li {
     background: var(--btnSec);
     left: 50%;
     transform: translateX(-50%);
-    bottom: -42px;
 }
 
 .jobGrazeWork .upperCOntentWrapper .dynamicContentContainer {
